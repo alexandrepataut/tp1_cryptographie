@@ -1,0 +1,75 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>TP1</title>
+	<link rel="stylesheet" type="text/css" href="view.css" media="all">
+	<script type="text/javascript" src="view.js"></script>
+	<script type="text/javascript" src="App.js"></script>
+
+</head>
+
+<body id="main_body">
+
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+
+		<h1><a>Untitled Form</a></h1>
+		<form id="form_35822" class="appnitro" method="post" action="">
+			<script language="JavaScript" type="text/javascript" src="App.js"></script>
+			<div class="form_description">
+				<h2>Encryption / Decryption form</h2>
+			</div>
+			<ul>
+				<li id="li_2">
+					<label class="description" for="element_2">Select an encryption method : </label>
+					<span>
+						<input id="MD5" name="method" class="element radio" type="radio" value="1" />
+							<label class="choice" for="element_2_1">MD5</label>
+						<input id="SHA2-256" name="method" class="element radio" type="radio" value="2" />
+							<label class="choice" for="element_2_2">SHA2-256</label>
+						<input id="SHA3-512" name="method" class="element radio" type="radio" value="3" />
+							<label class="choice" for="element_2_3">SHA3-512</label>
+						<input id="Keccak-512" name="method" class="element radio" type="radio" value="4" />
+							<label class="choice" for="element_2_4">Keccak-512</label>
+						<input id="RipeMD160" name="method" class="element radio" type="radio" value="5" />
+							<label class="choice" for="element_2_5">RipeMD160</label>
+						<input id="AES" name="method" class="element radio" type="radio" value="6" />
+							<label class="choice" for="element_2_6">AES</label>
+						<input id="RSA" name="method" class="element radio" type="radio" value="7" />
+							<label class="choice" for="element_2_7">RSA</label>
+						<input id="BlowFish" name="method" class="element radio" type="radio" value="8" />
+							<label class="choice" for="element_2_8">BlowFish</label>
+					</span>
+				</li>
+				<li id="li_3">
+					<label class="description" for="element_3">Multiple Choice </label>
+					<span>
+						<input id="element_3_1" name="element_3" class="element radio" type="radio" value="1" />
+						<label class="choice" for="element_3_1">Encrypt</label>
+						<input id="element_3_2" name="element_3" class="element radio" type="radio" value="2" />
+						<label class="choice" for="element_3_2">Decipher</label>
+
+					</span>
+				</li>
+				<li id="li_1">
+					<label class="description" for="element_1">Your input : </label>
+					<div>
+						<textarea id="input" name="input" class="input"></textarea>
+						<textarea id="output"></textarea>
+					</div>
+				</li>
+
+				<li class="buttons">
+					<button type="button" language="JavaScript" onclick="submitForm()" src="App.js">Submit</button>
+				</li>
+			</ul>
+			<p id="myPara"></p>
+		</form>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+</body>
+
+</html>
